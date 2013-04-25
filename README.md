@@ -1,0 +1,4 @@
+negociodoseculo
+===============
+
+captura do winner
