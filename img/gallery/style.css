@@ -1,0 +1,635 @@
+@charset utf-8;
+
+ ============================== 
+ 
+	- Title Simplify 
+	- Autor Coralix Themes
+	- Email coralixthemes@gmail.com
+	- Version 1.0
+
+ ============================== 
+
+
+
+ ---------------------------------------------------------------------- 
+	Import styles
+ ---------------------------------------------------------------------- 
+
+ bootstrap.css  - include resetes ( Media querys, grid-responsive,layout).
+@import url(bootstrapbootstrap.css);
+@import url(bootstrapbootstrap-responsive.css);
+jquery.fancybox-1.3.1.css  - Lightbox
+@import url(..jsfancyboxjquery.fancybox-1.3.1.css);
+carousel.css
+@import url(carouselflexslider.css);
+slide.css
+@import url(slidecamera.css);
+Tables.css
+@import url(tablesstyle.css);
+Icons
+@import url(fontfontello.css);
+Animations
+@import url(animationsanimate.css);
+Google Fonts
+@import url(httpfonts.googleapis.comcssfamily=Montserrat400,700);
+
+
+
+ Standar Styles --------------------------------------------------------
+
+body{
+	font-size 16px;	
+	font-family 'Montserrat', sans-serif;
+	line-height26px;
+	color#8f9394;
+	position relative;
+	font-weightnormal;	 	
+}
+a{
+	color #c6c8c8;
+	 outline 0;
+}
+ahover{
+	color #26a3ea;
+	 outline 0;
+}
+ahover, aactive, afocus {
+ text-decoration none;	
+}
+p{
+	margin0 0 20px 0;
+	padding 0;	
+}
+h1 {font-size36px;}
+h2 {font-size30px;}
+h3 {font-size24px;}
+h4 {font-size20px;}
+h5 {font-size18px;}
+h6 {font-size14px;}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight 700;
+	line-height 30px;
+	padding 5px 0 15px 0;	
+	margin 0;	
+	color #747778;	
+}
+img{
+	width 100%;
+}
+  Transitional elements
+================================================== 
+
+.social ul li,
+nav ul li a,
+.language a,
+.head_info .button,
+.is-sticky li a,
+.is-sticky .language a,
+#pricing .dg-center .button,
+input.button,
+.contact input.button				
+	{ 
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;
+}
+
+
+
+ Class and styles General ----------------------------
+
+.clearfix{
+	width1px;
+	height1px;	
+	displayblock;
+	clearboth;
+	content , ;
+}
+.alignleft {
+	float left;
+}
+.alignright {
+	float right;
+}
+.text_right{
+	text-align right;
+}
+.center{
+	text-align center;
+}
+.padding_top{
+	padding-top 50px;
+}
+.head_info .button{
+	width auto;
+	background-color #26a3ea;
+	border5px solid #26a3ea;
+	color #fff;	
+	padding 20px 40px;
+	font-size 21px;
+	line-height 31px;
+	margin 30px 0;
+}
+
+.head_info .buttonhover{
+	background-color transparent;
+	border5px solid #2292d2;
+	color #26a3ea;	
+}
+.title{
+	position relative;
+	margin-bottom 35px;
+	line-height 46px;
+	font-weight normal;
+}
+.title .underline-heading {
+	height 5px;
+	left 0;
+	background  #b1b7b8;
+	bottom 0;
+	width 80px;
+	position absolute;
+}
+.subtitle{
+	margin-bottom 30px;
+}
+.subtitle h5{
+	padding 0;
+	font-weight normal;
+}
+.color_title{
+	color #26a3ea;	
+}
+
+
+
+
+
+ Head ----------------------------
+
+.logo img{
+	width auto;
+}
+.social ul{
+	margin 0;
+	padding 25px 0 0 0;
+	list-style none;
+	text-align right;
+}
+.social ul li{
+	display inline-block;
+	border 2px solid #d5d6d5;
+	padding 8px 11px;
+	border-radius 50%;
+	margin-left 10px;
+	text-align center;
+}
+.social ul lihover{	
+	border 2px solid #26a3ea;
+}
+.social ul lihover i{	
+	color #26a3ea;	
+}
+.head{
+	border-bottom 1px solid #cdcdcd;
+	padding 40px 0 25px 0;
+}
+
+
+
+ Menu Nav ------------------------------------
+
+.tinynav{ 
+	display none 
+}
+.is-sticky{
+	background-color #26a3ea;
+	width 100%;
+	padding14px 0 10px 0;
+	z-index 99999;
+}
+.is-sticky li {
+	padding 0;
+}
+.is-sticky .language{
+	padding 0;
+}
+.is-sticky .language a{
+	color #fff;
+	outline 0;
+	font-size12px;
+}
+.is-sticky .language ahover{
+	opacity 0.8;
+	outline 0;
+}
+.is-sticky li a{
+	color #fff;
+	outline 0;
+}
+.is-sticky li ahover{
+	opacity 0.8;
+	outline 0;
+}
+nav{
+	padding 27px 0 20px 0;
+}
+nav ul{
+	margin 0;			
+	list-style none;
+	height auto;
+}
+nav ul li{
+	list-style none;		
+	float left;
+	margin0;	
+	margin0 27px 0 0;
+	font-size 14px;
+	text-transform uppercase;
+	text-align center;
+	color #555;
+	border-top 2px solid transparent;
+}
+nav ul li a{
+	text-align center;
+	color #737778;
+	font-size 16px;
+	font-weight bold;
+	text-transform uppercase;
+}
+nav ul lilast-child{
+	margin0;	
+}
+
+.language{	
+	text-align right;
+	text-transform uppercase;
+	font-size12px;
+}
+
+
+
+ head_info ------------------------------------
+
+.head_info{
+	background #26a3ea url(..imgbackground-color.jpg) no-repeat center left;
+	padding 0;	
+}
+.head_info h1{
+	font-size60px;
+	line-height 70px;
+	margin-top 40px;
+	color#fff;
+}
+.head_info h5{
+	font-size26px;
+	line-height 36px;
+	margin-bottom 15px;
+	color#fff;
+}
+.head_info p{
+	font-weight bold;
+	color#fff;
+}
+
+
+
+ Section Area ------------------------------------
+
+.section_area{
+	background-color #fff;
+	padding 120px 0 0 0;		
+	position relative;	
+	overflow hidden;
+}
+.resalt{
+	background-color #f0f0f0;
+	border-bottom 3px solid #e5e5e5;
+	margin-top 110px;
+	padding 55px 0 70px 0;
+}
+.image_resalt{
+	overflow hidden;
+}
+.resalte{
+	position relative;
+	right -1000px;
+}
+
+.services li imghover {
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;
+	opacity0.7;
+	}
+
+ Galley ------------------------------------
+
+.flexslider .gallery li img{
+	width 100%;
+	margin 0;
+}
+.flexslider .gallery li{
+	padding 5px;
+	max-width 296px;
+	bordersolid 1px #eee;
+	border-radius 3px;
+	position relative;
+}
+.overlay{
+	position absolute;	
+	left 0;
+	top -301px;	
+	width 97%;
+	background #2292d2 url(..imgmore.png) no-repeat center center;
+	background rgba(34, 146, 210,0.7) url(..imgmore.png) no-repeat center center;
+	height 97%;
+	margin 1.5%;	
+	z-index 9999;
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;
+}
+.flexslider .gallery lihover .overlay{
+	top 0;
+	cursor pointer;	
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;
+}
+
+
+
+ Testimonials ------------------------------------
+
+.item_testimonial{
+	position relative;
+	margin-bottom 50px;
+}
+.line_commnet{
+	height 2px;
+	width 100%;
+	background #eaeaea;
+	position absolute;
+	top 34%;
+	z-index 0;
+}
+.item_testimonial p{
+	font-style italic;
+	margin 0;
+	position relative;
+}
+.image_testimonial{
+	border-radius 50%;
+	overflow hidden;
+	bordersolid 23px #fff;
+	width 40%;
+	margin 0 auto;	
+	z-index 2;
+	background #efefef;
+	position relative;
+	padding 3px;
+}
+.item_testimonial img{
+	border-radius 50%;
+}
+.info_testimonial{
+	position absolute;
+	text-align center;
+	color #fff;
+	background #2292d2;
+	background rgba(34, 146, 210,0.7);
+	top -300px;
+	border-radius 50%;
+	height 99%;
+	width 100%;
+	overflow hidden;
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;	
+}
+.info_testimonial h5{
+	color #fff;
+	padding-top 30%;
+	text-align center;
+	margin 0 auto;
+	width 90%;
+}
+.image_testimonialhover .info_testimonial{
+	top 0;	
+	-webkit-transition 0.3s all ease;
+	-moz-transition 0.3s all ease;
+	-o-transition 0.3s all ease;
+	-ms-transition 0.3s all ease;
+	transition 0.3s all ease;
+}
+.comment{
+	background url(..imgcomment.png) no-repeat;
+	width 26px;
+	height 18px;
+	position absolute;
+	bottom 0;
+	right 40%;
+}
+
+ Pricing Tables ------------------------------------
+
+.item_princing{
+	text-align center;
+	bordersolid #ececec 1px;	
+}
+.item_princing h2{
+	background-color #c6c6c6;
+	color #fff;
+	padding 10px 0;
+	margin-bottom 10px;
+}
+.item_princing h1{
+	font-size 70px;
+	line-height 80px;
+	padding 0;
+	margin 0;
+}
+.item_princing h1 span{
+	font-size 20px;
+}
+.item_princing ul{
+	list-style none;
+	margin0;
+	text-align center;
+	margin-bottom 30px;
+}
+.item_princing ul li{
+	line-height 30px;
+	padding-bottom 10px;
+}
+.item_princing .info{
+	padding 10px 20px;
+}
+#pricing .item_princing .button{
+	padding 8px 25px;
+	margin 30px 0;
+	color#fff;
+	background-color #ccc;
+	border5px solid #ccc;
+}
+#pricing .dg-center .button{
+	padding 8px 25px;
+	margin 30px 0;
+	color#fff;
+	background-color #26a3ea;
+	border5px solid #26a3ea;
+}
+#pricing .item_princing .buttonhover {
+	background-color transparent;
+	border5px solid #2292d2;
+	color #26a3ea;	
+}
+#pricing{
+	padding-bottom 100px;
+}
+
+ Newsletter ------------------------------------
+
+.newsletter{
+	margin 30px 0;
+	border 3px solid #f5f5f5;
+	padding 40px;
+	-webkit-box-shadow 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow 0px 0px 10px 0px rgba(245, 245, 245, 0.8);
+}
+.newsletter input{
+	background-color #f5f5f5;
+	border 1px solid #ededed;
+	height 45px;
+	width 90%;
+	margin 0;
+}
+form{
+	margin 0;
+}
+input.button{
+	width auto;
+	background-color #26a3ea;
+	border5px solid #26a3ea;
+	color #fff;	
+	padding 8px 20px;
+	font-size 21px;
+	line-height 31px;
+	margin 25px 0 0 0;
+	height auto;
+}
+input.buttonhover{
+	background-color transparent;
+	border5px solid #2292d2;
+	color #26a3ea;	
+}
+
+
+.contact{
+	border 3px solid #f5f5f5;
+	padding 40px;
+	-webkit-box-shadow 0px 0px 16px 0px rgba(0, 0, 0, 0.9);
+	box-shadow 0px 0px 10px 0px rgba(245, 245, 245, 0.8);
+}
+.input_form{
+	margin-bottom 20px;
+}
+.contact input{
+	background-color #f5f5f5;
+	border 1px solid #ededed;
+	height 45px;
+	width 98%;
+	margin 0;
+}
+textarea{
+	background-color #f5f5f5;
+	border 1px solid #ededed;
+	height 140px;
+	width 98%;	
+}
+.contact input.button{
+	width auto;
+	background-color #26a3ea;
+	border5px solid #26a3ea;
+	color #fff;	
+	padding 8px 20px;
+	font-size 21px;
+	line-height 31px;
+	margin 25px 0 0 0;
+	height auto;
+}
+.contact input.buttonhover{
+	background-color transparent;
+	border5px solid #2292d2;
+	color #26a3ea;	
+}
+.contact .text_right{
+	margin 0;
+}
+.border_footer{
+	border-top 1px solid #edeef0;
+	padding 20px 0 0 0;	
+	margin-top 120px;
+}
+
+
+
+ ---------------------------------------------------------------------- 
+	Version 1024px
+ ---------------------------------------------------------------------- 
+
+@media handheld, only screen and (max-width 1024px) {}
+
+
+ ---------------------------------------------------------------------- 
+	Mobile Version 767px
+ ---------------------------------------------------------------------- 
+
+@media handheld, only screen and (max-width 767px) {
+
+	#menu{
+		display none;	
+	}
+	.tinynav {
+		display inline;
+		width 100%;		
+		background white;
+		margin-top 20px;
+		float right;		
+		font-size 14px;
+		border 1px solid #dbdbdb;
+		height 35px;	
+	} 
+	
+}
+
+ ---------------------------------------------------------------------- 
+	Mobile Version 600px
+ ---------------------------------------------------------------------- 
+
+@media handheld, only screen and (max-width 600px) {}
+
+ ---------------------------------------------------------------------- 
+	Mobile Version 568px
+ ---------------------------------------------------------------------- 
+
+@media handheld, only screen and (max-width 568px) {	}
+@media handheld, only screen and (max-width 480px) {}
+
+ ---------------------------------------------------------------------- 
+	Mobile Version 320px
+ ---------------------------------------------------------------------- 
+
+@media handheld, only screen and (max-width 320px) {}
